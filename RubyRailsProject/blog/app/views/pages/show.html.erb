@@ -1,0 +1,12 @@
+<% require "money" %>
+<h1><%= @page.title%> </h1>
+<p> 
+ <%= @page.body%>
+</p>
+<p> 
+ $<%= Money.new(@page.salary, "USD")%>
+</p>
+
+
+<%= link_to 'Edit', edit_page_path(@page) %>
+<%= link_to 'Delete', @page, data: {turbo_method: :delete}%>
