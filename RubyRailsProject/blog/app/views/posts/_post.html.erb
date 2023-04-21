@@ -8,4 +8,17 @@
     <strong>Body:</strong>
     <%= post.body %>
   </p>
+  
+<div id="comments">
+    <% if post.comments.present? %>
+      <h1>Comments</h1>
+      <% #render partial: "comments/comment", collection: @post.comments, as: :comment  long way to render partial %>
+      <%= render post.comments %>
+    <% end %>
+    <h2>Add a Comment</h2>
+    <%= render partial: "comments/form", locals: {post: post, comment: post.comments.new} %>
+
 </div>
+
+</div>
+

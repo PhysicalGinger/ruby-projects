@@ -1,0 +1,8 @@
+    <div>
+      <strong> <%= comment.name %> says: </strong>
+      <%= comment.content %>
+      <div class = "comment-admin">
+        <%= link_to "Edit", edit_post_comment_path(Post.find(comment.post_id), comment) %>|
+        <%= link_to "Delete", [Post.find(comment.post_id), comment], data: {turbo_method: :delete}%>
+      </div>
+    </div>

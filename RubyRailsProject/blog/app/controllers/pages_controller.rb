@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
     before_action :set_page, only: [:show, :edit, :update, :destroy]
     before_action :format_currency, only: [:create, :update]
-    before_action :present_currency, only: [:edit]
+
     def index
         @pages = Page.all
     end

@@ -17,7 +17,7 @@ body {
   
   a, input[type="submit"] {
     display: inline-block;
-    background-color: #e15258;
+    background-color: #28b93b;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -35,9 +35,27 @@ body {
   input[type="submit"]:hover,
   input[type="submit"]:focus,
   input[type="submit"]:active {
+    background-color: #1b7927;
+  }
+  a, button[type="submit"] {
+    display: inline-block;
+    background-color: #e15258;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 100px;
+    transition: background-color 200ms ease-in-out;
+    letter-spacing: 0.05em;
+    border: none;
+  }
+  button[type="submit"]:hover,
+  button[type="submit"]:focus,
+  button[type="submit"]:active {
     background-color: #c3222a;
   }
-  
   div + a,
   div a {
     background-color: #aaa;
@@ -58,13 +76,13 @@ body {
   
   div {
     text-align: left;
-    width: 50%;
+    width: 85%;
     margin: 0 auto;
-    background-color: #fff;
-    padding: 50px;
+    background-color: #c9c9c95b;
+    padding: 10px;
     border-radius: 5px;
     border-bottom: solid 2px #ddd;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   
   fieldset {
@@ -90,6 +108,7 @@ body {
     border: solid 2px #ddd;
     border-radius: 4px;
     font-size: 16px;
+    margin-bottom: 10px;
   }
   
   input[type="text"]:focus,
@@ -97,4 +116,22 @@ body {
     outline: none;
     border-color: #0099ff;
   }
+
+  .button_group {
+    text-align: center;
+    background-color: transparent;
+    border-bottom: none;
+  }
+
+  .actions {
+    text-align: right;
+    background-color: transparent;
+    padding: 0;
+  }
   
+  .comment-admin {
+    text-align: right;
+    position: relative;
+    background-color: transparent;
+    padding: 5px;
+  }
